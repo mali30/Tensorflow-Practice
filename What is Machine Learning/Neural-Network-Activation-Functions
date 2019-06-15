@@ -1,0 +1,13 @@
+Input Layers - Your input values. Real data
+Hidden Layers - Layers in between input and output
+		3 or more layers is a deep network
+
+Output Layer - Final estimate of the output
+
+z = wx + b
+weights * input + bias
+
+Changing Activation Functions can be useful for the particular task
+*Sigmoid function
+*Hyperbolic Tangent 
+*Rectified Linear Unit or ReLU
