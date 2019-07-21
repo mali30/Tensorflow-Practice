@@ -1,0 +1,4 @@
+We will be using Softmax Regression:
+- A softmax regression returns a list of values between
+0 and 1 that add up to 1
+- Also using Softmax as our activation function 

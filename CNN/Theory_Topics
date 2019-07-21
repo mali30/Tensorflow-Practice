@@ -1,0 +1,57 @@
+Initilization of Weights
+
+Before we were setting our weights to random values
+
+We could set it to 0's but this is bad because
+- no randomness 
+- not a great choice 
+
+Random Distribution Near Zero 
+Even if we use a uniform distribution or normal from - 1 to 1, the values get distored after 
+being  jj         passed into activation function 
+
+So we will use Xavier Initilization
+- Draw weights from a distribution that has 0 mean and a speciifc variance 
+- variance is defined as 
+- W is initialization distribution for neuron in question 
+- n in is the number of neurons being fed into it.
+-  Comes in both Gaussain(Normal) or Unifrom Distribution .
+Var(W) = 1/n
+            in 
+
+
+Learning Rate 
+- defines the step size during the graident descent 
+
+Batch Size
+- Batches allow use to use Stochastic Gradient Descent 
+* Smaller batches mean less representitive data 
+* Bigger mean longer training time 
+
+Second Order Behavior of the gradient descent allows us to adjust our learning rate 
+based on the rate of descent. It would great if our learning rate was high in the beginning
+and then adjusts over time so its less.  
+- AdaGrad
+- RMSprop
+- Adam 
+
+Unstable and Vanishing Gradient 
+- As you increase the number of layers in a network, the layers toward the input will be affected 
+less by the error calculation occuring at the outptut as you go backward through the network.
+
+To help mitigate this, we use Initilaztion and Normalization. If you have both that are good,
+you don't have to worry too much. 
+
+Overfitting and underfitting 
+- With over, your model does great on training but horrible on testing 
+- Under you do horrible on both testing and trianing  
+
+Tricks
+- L1/L2 Regularization 
+- Dropout 
+* select random neurons and remove them.
+* network doesn't rely on on any particular neurons 
+- Expanding Data 
+* change training data. add noise, tilt images, etc.. 
+
+Look over ONE HOT ENCODING

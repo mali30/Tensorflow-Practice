@@ -1,0 +1,57 @@
+Supervised Learning - uses labeled data to predict a label given some features
+
+If the label is continuous its called a regression problem, if its categorical it is called a classification problem.
+
+Classification - 
+Features: Heights and Weights
+Label : Gender
+
+Task: Given a person's height and weight, predict their gender
+
+Regression
+Features: Square Footage, Rooms
+Label: House Price
+
+Task: Given a house's size and number of rooms, predict the selling price
+
+
+Unsuperivsed Learning
+Clustering- Features no Labels
+
+Features: Height and Weight
+Label: ? 
+
+Reinforcement Learning
+
+Agent-Learning/Decision Maker
+Environment - What Agent interacts with
+Actions - What the Agent can do
+
+
+Steps for Supervised Learning:
+1. Data Acquisition
+2. Data Cleaning
+3. Test-Train Split
+4. Train Model on Train Set
+5. Evaluate Model on Test Set
+6. Adjust Model Parameters
+7. Deploy Model
+
+Steps for Unsupervised Learning:
+1. Data Acquisition
+2. Data Cleaning
+3. Train 
+4. Train Mode
+5. Evaluate Model
+6. Deploy Model
+
+
+Hold Out Sets:
+1. Data Acquisition
+2. Data Cleaning
+3. Holdout-Test-Train Split
+4. Train Model on Train Set
+5. Evaluate Model on Test Set
+6. Adjust Model Parameters
+7. Deploy Model(Test against Holdout)
+* Holdout is final metric test against model since it's never seen the data and no paramters adjusted for it.

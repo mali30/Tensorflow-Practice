@@ -1,0 +1,46 @@
+Tensors:
+They are N-Dimensional arrays that we build up to 
+Scalar - 1,2,3,4,5...
+Vector - [1,2,3]
+Matrix - [[1,2,3] , [3,4,5]]
+Tensor -[[ [1,2] , [3,4] , [4,5] , [5,7]]]
+
+
+Tensors make it convenient to feed in sets of images into our model
+I : Images 
+H : Height of Images in Pixels 
+W : Width of Images in Pixels 
+C : Color Channels: 1-Grayscale, 3-RGB
+
+Difference between DNN and CNN 
+
+DNN - every neuron in one layer is connected to every nueron in another layer
+CNN - each unit is connected to a smaller number of nearby units in next layer
+
+As images get larger and larger, DNN would have too many paramaters and unscalable to new images
+
+Why CNN:
+*CNN are great for image processing.
+*Pixels that are nearby each other are much more correlated for image detection
+*Each CNN layers looks at incresingly larger parts of the image
+*Having units only connnected to nearby units also aids in invariance
+*CNN also helps with regularization limiting the search of weights to the size of the 
+convolution
+
+As we get closer to the edge of an image, their may not be any input neurons. 
+So we use Padding to add zeroes around the edge of an image 
+
+
+1-D Convolution Breakdown:
+We can treat weights of edges as local filters
+If we have a really dark pixel next to really light pixel, we are essentialy describing 
+and edge  (x1, x2) = (1,0)
+
+
+The website below explains Filter well
+https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/
+
+Filters - A filter is a 3x3 matrix of weights that is slid over an image in order to produce a filtered output
+Stride 
+- Number of times your weights or filters are bing applied along the input neurons 
+- Stride distance also takes into account how fast you move across your image with your filter

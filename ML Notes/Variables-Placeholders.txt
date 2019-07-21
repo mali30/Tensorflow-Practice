@@ -1,0 +1,14 @@
+Variables and Placeholders
+
+The optimization process serves to tune the parameters of some given model. For
+that purpose, TensorFlow uses special objects called Variables.
+
+Variables can hold the weights and biases throughout the session
+* Must initialize your variables 
+init = tf.global_variables_initializer()
+
+Placeholders - empty at first. data is fed into it in small batches
+needs to know the type of data and shape 
+*  You may not know the number of samples in your data so its 
+common to see this below 
+pt = tf.placeholder(tf.int32, shape=(None,5))
